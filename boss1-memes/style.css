@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1f1f1f;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#btnDescargar {
+  margin-top: 15px;
+}
+
+#templates {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 15px;
+}
+
+.template-btn {
+  white-space: nowrap;
+}
+
+.meme {
+  position: relative;
+  width: 100%;
+}
+
+.meme img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.top-text,
+.bottom-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+
+  color: white;
+  font-family: Impact, sans-serif;
+  font-size: 2rem;
+
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000;
+}
+
+.top-text {
+  top: 10px;
+}
+
+.bottom-text {
+  bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .top-text,
+  .bottom-text {
+    font-size: 1.5rem;
+  }
+}

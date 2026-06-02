@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Memes</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Generador de Memes</h1>
+
+    <input
+      type="text"
+      id="inputUrl"
+      placeholder="Pegá URL de imagen"
+    >
+
+    <input
+      type="text"
+      id="inputTop"
+      placeholder="Texto arriba"
+    >
+
+    <input
+      type="text"
+      id="inputBottom"
+      placeholder="Texto abajo"
+    >
+
+    <div id="templates"></div>
+
+    <div class="meme" id="meme">
+        <img
+  id="memeImg"
+  src="https://imgflip.com/s/meme/Cute-Cat.jpg"
+/>
+
+      <h2 id="textoTop" class="top-text"></h2>
+
+      <h2 id="textoBottom" class="bottom-text"></h2>
+
+    </div>
+
+    <button id="btnDescargar">
+      Descargar meme
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

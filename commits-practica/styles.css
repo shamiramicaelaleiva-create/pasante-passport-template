@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: blue;
+  color: white;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+}
